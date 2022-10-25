@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>KurdAnime</title>
+      <link rel="stylesheet" href="NarutoStyle.css">
+     
+     
+     
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     
+     
+     <style>
+       
+       @font-face {
+         font-family:"Rabar";
+         src: url("NarutoFonts/Rabar_038.ttf")
+       }
+       
+       body{
+         background:black;
+         font-family:"Rabar"
+       }
+       
+       
+       div.logo{
+         color:#ff9913;
+         
+       }
+       
+       img.cover{
+         width:415px
+       }
+      
+       p.anime-header{
+         color:white;
+         padding-left: 93px;
+         font-size: 25px;
+         font-weight: 550;
+         
+       }
+       
+       p.genre{
+         color:white;
+         float: right;
+         padding: 20px;
+         font-family:"rabar"
+       }
+       
+       p.story{
+         color:white;
+         padding: 12px;
+         font-family: "rabar";
+         text-align: right;
+       }
+       
+       p.info{
+         color:white;
+         padding:12px;
+         font-family:"rabar";
+         text-align:right;
+       }
+      
+      
+      p.season{
+         color:white;
+         padding:12px;
+         font-family:"rabar";
+         text-align:right;
+       }
+       
+       
+       div.episodes{
+         display:flex;
+         padding: 20px
+       }
+       
+       
+       a{
+         text-decoration:none;
+         
+       }
+       
+       p.episode{
+         color:white;
+         padding: 20px;
+         font-size: 20px;
+         border:solid 2px #ff9913;
+         border-radius: 10px;
+ 
+       }
+       
+       p.episode:hover{
+         border: solid 2px white;
+         color:#ff9913
+       }
+       
+       
+
+
+     
+     </style>
+     
+   </head>
+  
+  
+  
+   <body>
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div  class="logo">
+           KurdAnime
+         </div>
+         <div class="nav-items">
+            <li><a href="../index.html">سەرەتا</a></li>
+            <li><a href="../movies/index.html">فیلم</a></li>
+            <li><a href="../series/index.html">زنجیرە</a></li>
+            <li><a href="#">چەشنەکان</a></li>
+            <li><a href="#">دەربارە</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form action="#">
+            <input type="search" class="search-data" placeholder="                                        گەڕان " required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+     
+     
+     
+     <img class="cover" src="NarutoImages/Naruto.png">
+     
+     
+     <p class="anime-header">
+       Naruto: Shippuden
+     </p>
+     
+     <br>
+     
+     <p class="genre">
+       
+      چەشن: شۆنێن، خەیاڵی، هاوڕێیەتی
+       
+      
+       
+       
+     </p>
+    
+     <br>
+     <br>
+     <br>
+     
+     <p class="story">
+       
+       چیڕۆک: دوای دووساڵ ناڕۆتۆ دەگەڕێتەوە گوندەکەی، دوای ئەوەی مەشقی لەگەڵ مامۆستاکەی جیرایا کردووە ئێستا بەهێزتر بووە لە جاران تووشی چەندان سەرکێشی دەبێت و ڕووبەڕووی گروپێک دەبێتەوە بەناوی ئاکاتسکی
+       
+     </p>
+     
+    
+     
+     
+     <p class="info">
+       وەرگێڕان: وەرگێڕ
+       <br>
+       ژمارەی ئەڵقە :٥٠٠
+       <br>
+       نووسەر:کیشۆمۆتۆ
+       
+     </p>
+     
+     
+     <br>
+     
+     <p class="season">
+       
+       وەرزی یەکەم
+       
+     </p>
+     <br>
+     
+     <div class="episodes">
+       
+     
+     
+       <a href="#" >
+         <p class="episode">
+           1
+         </p>
+     </a>
+     
+       <a href="#" >
+         <p class="episode">
+           2
+         </p>
+     </a>
+     <a href="#" >
+         <p class="episode">
+           3
+         </p>
+     </a>
+     <a href="#" >
+         <p class="episode">
+           4
+         </p>
+     </a>
+     <a href="#" >
+         <p class="episode">
+           5
+         </p>
+     </a>
+     <a href="#" >
+         <p class="episode">
+           6
+         </p>
+     </a>
+     <a href="#" >
+         <p class="episode">
+           7
+         </p>
+     </a>
+     
+       
+      
+
+   </div>
+      
+      <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#FF9913";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+   </body>
+</html>

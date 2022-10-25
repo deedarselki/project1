@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>KurdAnime</title>
+      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="stylesheet2.css">
+     <link rel="stylesheet" href="stylesheet2.css">
+     
+     
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     
+     
+     
+     
+   </head>
+  
+  
+  
+   <body>
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div  class="logo">
+           KurdAnime
+         </div>
+         <div class="nav-items">
+            <li><a href="index.html">سەرەتا</a></li>
+            <li><a href="movies/index.html">فیلم</a></li>
+            <li><a href="series/index.html">زنجیرە</a></li>
+            <li><a href="#">چەشنەکان</a></li>
+            <li><a href="#">دەربارە</a></li>
+         </div>
+        
+        
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+           
+           
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form action="#">
+           <input type="search" class="search-data" id="search" placeholder="                                        گەڕان " required onchange="openPage">
+           
+           <script>
+             
+             function openPage() {
+               
+               var x = document. getElementById("search").value;
+              if (x==="dog"){
+                window.open("");
+              }
+                
+               
+             
+             
+             }
+           </script>
+           
+           
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+     
+     <p class="anime-header">
+       
+       ئەنیمییەکان
+       
+     </p>
+     
+     <div class="side">
+       
+       <div>
+         <a href="naruto/narutoindex.html">
+         <img class="cover1" src="images/naruto.png">
+         </a>
+         <p class="anime-name1">
+           Naruto: Shippuden
+         </p>
+           
+           
+         
+       </div>
+       
+       <div>
+         
+         <a><img class="cover2" src="images/jujutsu kaisen.png"> 
+           </a>
+         
+         <p class="anime-name2">
+           Jujutsu Kaisen
+         </p>
+         
+       </div>
+       
+       
+       
+     </div>
+     
+     
+       
+    
+     <div class="side">
+     
+       
+       <div>
+         <a>
+         <img class="cover3" src="images/demonslayer.png">
+         
+         <p class="anime-name3">
+           Demon Slayer: Mugen Train
+          
+           
+         </p>
+           
+           </a>
+         
+       </div>
+       
+       <div>
+         
+         <a><img class="cover4" src="images/one piece.png"> 
+           </a>
+         
+         <p class="anime-name4">
+            One piece
+         </p>
+         
+       </div>
+       
+       
+     </div> 
+     
+
+     
+     <p class="anime-header2">
+       
+      فیلم
+       
+     </p>
+     
+     
+          
+     <div class="side">
+       
+       <div>
+         <a>
+         <img class="cover1" src="images/naruto.png">
+         
+         <p class="anime-name1">
+           Naruto: Shippuden
+         </p>
+           
+           </a>
+         
+       </div>
+       
+       <div>
+         
+         <a><img class="cover2" src="images/jujutsu kaisen.png"> 
+           </a>
+         
+         <p class="anime-name2">
+           Jujutsu Kaisen
+         </p>
+         
+       </div>
+       
+       
+       
+     </div>
+     
+     
+       
+    
+     <div class="side">
+     
+       
+       <div>
+         <a>
+         <img class="cover3" src="images/demonslayer.png">
+         
+         <p class="anime-name3">
+           Demon Slayer:<br>
+           mugen train
+           
+         </p>
+           
+           </a>
+         
+       </div>
+       
+       <div>
+         
+         <a><img class="cover4" src="images/one piece.png"> 
+           </a>
+         
+         <p class="anime-name4">
+            One piece
+         </p>
+         
+       </div>
+       
+       
+     </div> 
+     
+     
+     
+           <p class="anime-header3">
+       
+       زنجیرە
+       
+     </p>
+     
+     <div class="side">
+       
+       <div>
+         <a>
+         <img class="cover1" src="images/naruto.png">
+         
+         <p class="anime-name1">
+           Naruto: Shippuden
+         </p>
+           
+           </a>
+         
+       </div>
+       
+       <div>
+         
+         <a><img class="cover2" src="images/jujutsu kaisen.png"> 
+           </a>
+         
+         <p class="anime-name2">
+           Jujutsu Kaisen
+         </p>
+         
+       </div>
+       
+       
+       
+     </div>
+     
+     
+       
+    
+     <div class="side">
+     
+       
+       <div>
+         <a>
+         <img class="cover3" src="images/demonslayer.png">
+         
+         <p class="anime-name3">
+           Demon Slayer:<br>
+           mugen train
+           
+         </p>
+           
+           </a>
+         
+       </div>
+       
+       <div>
+         
+         <a><img class="cover4" src="images/one piece.png"> 
+           </a>
+         
+         <p class="anime-name4">
+            One piece
+         </p>
+         
+       </div>
+       
+       
+     </div>
+      
+      <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#FF9913";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+   </body>
+</html>
